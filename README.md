@@ -12,13 +12,22 @@ Our real estate agency, The S.O.D.O. Agency, is currently looking to purchase in
 
 #### Description of the Data Sources
 - Zillow (zillow.com)
+
+  Our housing market dataset, which is broken down by city/zip code was found on zillow.com. Zillow is an online real estate marketplace founded in 2006 and created by two       former microsoft executives Rich Barton and Lloyd Frink.
+  
 - US Census (census.gov)
+
+  The United States Census Bureau is a agency of the U.S. Federal Statistical System. They are primarily responsible for producing data about Americans and the American           economy. We chose data from the Census Bureau because it will allow us to look at economic factors such as income, as well as race and gender.
+  
 - Department of Justice FBI (ucr.fbi.gov)
 
+  Our last source of data comes from the Federal Bureau of Investigations also known as the FBI. The FBI is the U.S.'s principal federal law enforcement agency. Their data will   allow us to look the crime rate in cities across Illinois. 
+  
+  
+  
 #### Communication Protocols
 To most effectively achieve our agency goals in a timely manner. We plan to establish a project timeline that will allow us to review and triple check our work before our deadline. We also will utilize class time and schedule an additional day during the week to meet and make sure we are all on one accord. If necessary, we will attend office hours to sort out any issues we may run into that week. In between we will maintain communication and follow-up with each other via Slack messaging. 
 Each member of the agency has created an individual work branch that is attached to the main branch of our project repository. We all will review pushes from individual branches in GitHub to the main branch to ensure we present an error-proof analysis.
-
 
 
 
