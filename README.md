@@ -35,7 +35,7 @@ Each member of the agency has created an individual work branch that is attached
 ***
 
 #### Machine Learning
-To begin, our data will be cleaned using .ipynb files in Google Colaboratory, .csvs will be stored using AWS, and a PostgresSQL server will be used to house tables for the Machine Learning model. To build our machine learning model we will use a supervised machine learning and utilize the scikit-learn library for the Python programming language. Scikit-learn features various algorithms that will help us find the appropriate data we are looking for. 
+To begin, our data will be cleaned using PySpark, data will be stored in AWS database, and a PostgresSQL server will be used to house tables for the data. To build our machine learning model we will use a supervised machine learning and utilize the scikit-learn library for the Python programming language. Scikit-learn features various algorithms that will help us predict housing prices. 
 
 #### Visualization 
 To transform our data into a visual presentation we will use Tableau. Tableau is user friendly as well as viewer friendly. It will allow us to create visual breakdowns that explain the data found over the course of our analysis. 
