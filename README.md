@@ -4,8 +4,7 @@
 ***
 
 #### Machine Learning
-For Machine Learning a supervised machine learning model through scikit-learn will be used. Data will be cleaned using .ipynb files in Google Colaboratory, .csvs will be stored using AWS, and a PostgresSQL server will be used to house tables for the Machine Learning model. See requirements.txt for packages and versions.
+To begin, our data will be cleaned using PySpark, data will be stored in AWS database, and a PostgresSQL server will be used to house tables for the data. To build our machine learning model we will use a supervised machine learning and utilize the scikit-learn library for the Python programming language. Scikit-learn features various algorithms that will help us predict housing prices. See requirements.txt for packages and versions.
 
 #### Visualization 
-For visualization Tableau will be used to help visualize data and draw conclusions based on the ML model.
-
+To transform our data into a visual presentation we will use Tableau. Tableau is user friendly as well as viewer friendly. It will allow us to create visual breakdowns that explain the data found over the course of our analysis. 
