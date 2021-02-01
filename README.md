@@ -1,4 +1,3 @@
-# Final_Project
 ![Title Image](resources/title_image.jpg)
 
 ## Using supervised learning to determine the primary socio-economic factors that effect home prices in Illinois
