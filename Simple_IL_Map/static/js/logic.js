@@ -2,7 +2,7 @@
 console.log("working");
 
 // 2. Create the map object with a center and zoom level.
-let map = L.map('mapid').setView([40.7, -94.5], 4);
+let map = L.map('mapid').setView([39.8, -89.3985], 7);
 
 // Code from Leaflet documentation.
 // var mymap = L.map('mapid').setView([51.505, -0.09], 13);
@@ -24,27 +24,27 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'API_KEY'
-}).addTo(mymap);
-
+    accessToken: API_KEY
+}).addTo(map);
+L.geoJson(IL).addTo(map)
 // Code from Module
 // We create the tile layer that will be the background of our map.
-let streets = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: API_KEY
-});
-// Then we add our 'graymap' tile layer to the map.
-streets.addTo(map);
+// let streets = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+// attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+//     maxZoom: 18,
+//     id: 'mapbox.streets',
+//     accessToken: API_KEY
+// });
+// // Then we add our 'graymap' tile layer to the map.
+// streets.addTo(map);
 
 
-// 4. We create the tile layer that will be the background of our map. Reference 13.2.4
-let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    accessToken: API_KEY
-});
+// 4. We create the tile layer that will be the background of our map. Reference
+// let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+// attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+//     maxZoom: 18,
+//     accessToken: API_KEY
+// });
 
-// Then we add our 'graymap' tile layer to the map.
-streets.addTo(map)
+// // Then we add our 'graymap' tile layer to the map.
+// streets.addTo(map)
