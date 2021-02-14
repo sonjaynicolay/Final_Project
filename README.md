@@ -71,6 +71,7 @@ Below you can see the ERD that breaks down the merges:
 
 ### Data Analysis
 
+
 #### Description of how data was split into training and testing sets 
 We decided not to split the dataset into training and testing sets because KNeighborsRegressor does not require training steps.
 #### Explanation of model choice, including limitations and benefits 
@@ -83,5 +84,14 @@ However, the following limitations are associated with it :
 -	KNeighborsRegressor is very sensitive to outliers as it simply chose the neighbors based on distance criteria.
 -	KNeighborsRegressor inherently has no capability of dealing with missing value problems.
 
-***
+#### Description of Data Pre-Processing 
+The dataset it taken from different sources. One challenge of this dataset is the missing data after merging the data. Some missing data, such as crime data - where a missing value means there is no crime in the cities - we replace those missing value with 0 but dropped missing data in median Income.
+
+#### Description of feature engineering and the feature selection, including their decision-making process 
+Dealing with a large number of dirty features is always a challenge. This section focuses on the feature dropping variables
+#### Drop
+Usually, it makes sense to delete features that are highly correlated. In our analysis, we found out that Gender (Male and Female) and Total Population had a very strong positive correlation of 0.83. Hence, we decided to drop Gender. Also, we dropped features that are below the 0.025 feature importance thresholds.
+
+
+
 
