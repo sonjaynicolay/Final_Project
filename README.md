@@ -70,5 +70,18 @@ Below you can see the ERD that breaks down the merges:
 </p>
 
 ### Data Analysis
+
+#### Description of how data was split into training and testing sets 
+We decided not to split the dataset into training and testing sets because KNeighborsRegressor does not require training steps.
+#### Explanation of model choice, including limitations and benefits 
+We decided to choose KNeighborsRegressor because of the following reasons:
+-	It gives the highest R-square value compare to other algorithms. 
+-	It does not require training steps. KNeighborsRegressor does not explicitly build any model. It merely tags the new data entry-based learning from historical data. The new data entry would be tagged with the majority class in the nearest neighbor.
+-	KNeighborsRegressor might take some time while selecting the first hyperparameter, but after that rest of the parameters are aligned to it.
+However, the following limitations are associated with it :
+-	KNeighborsRegressor works well with the small number of input variables, but as the numbers of variables grow, the KNeighborsRegressor algorithm struggles to predict the output of a new data point.
+-	KNeighborsRegressor is very sensitive to outliers as it simply chose the neighbors based on distance criteria.
+-	KNeighborsRegressor inherently has no capability of dealing with missing value problems.
+
 ***
 
