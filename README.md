@@ -65,7 +65,9 @@ Due to the complexity of the joins and merges of our 6 distinct datasets - this 
 
 Below you can see the ERD that breaks down the merges:
 
-![ERD.png](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/data_merging/ERD.png)
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/data_merging/ERD.png" width="600" />
+</p>
 
 ### Data Analysis
 ***
