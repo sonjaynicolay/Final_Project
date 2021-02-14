@@ -1,4 +1,6 @@
-![Title Image](resources/title_image.jpg)
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/title_image.jpg" width="1000" />
+</p>
 
 ## Using supervised learning to determine the primary socio-economic factors that effect home prices in Illinois
 ---
