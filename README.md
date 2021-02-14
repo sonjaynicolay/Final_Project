@@ -44,3 +44,18 @@ To begin, our data will be cleaned using PySpark, data will be stored in AWS dat
 #### Visualization 
 To transform our data into a visual presentation we will use Tableau. Tableau is user friendly as well as viewer friendly. It will allow us to create visual breakdowns that explain the data found over the course of our analysis. 
 
+### Data Exploration
+***
+While our concept of determining how housing prices may be impacted by various demographic and crime data initially seemed simple, as we began to consider visualizations we had to change our strategy on how best to approach the data.
+
+We had initially hoped to view the data by zipcode, but ultimately determined organizing the data by city was necessary. In addition to offering better visualizations, the crime data we hoped to include was only organized by city. Another challenge was how best to visualize the data. Once we determined we wanted to include maps, the need to include the longitude and latitude for each city became evident.
+
+As a result of these shifts, our initial plan to merge income data (income_data), demographic census data (acs_data), crime data (crime_data), and housing data (zhvi_data) suddenly included the need to add datasets that showed zipcode by city (city_data) and the longitude and latitude of each city (coord_data).
+
+As we began digging into the data we had to make decisions around what variables we wanted to keep for our final analysis. Due to the complexity of our data
+
+#### Navigating 
+
+### Data Analysis
+***
+
