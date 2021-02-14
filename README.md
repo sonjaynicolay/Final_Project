@@ -21,7 +21,11 @@ Our real estate agency, The S.O.D.O. Agency, is currently looking to purchase in
   
 - Department of Justice FBI (ucr.fbi.gov)
 
-  Our last source of data comes from the Federal Bureau of Investigations also known as the FBI. The FBI is the U.S.'s principal federal law enforcement agency. Their data will   allow us to look the crime rate in cities across Illinois. 
+  The Federal Bureau of Investigations also known as the FBI. The FBI is the U.S.'s principal federal law enforcement agency. Their data will allow us to look the crime rate in cities across Illinois. 
+  
+- OpenDataSoft (https://public.opendatasoft.com/)
+
+  Similar to kaggle.com, OpenDataSoft is a platform with a selection of wide ranging datasets. Their platform offered us datasets that showed the longitude and latitude by cities in the United States (to better help with our visualizations) as well as a dataset that broken down the cities associated with zipcode (to better merge for our final table).
   
   
   
