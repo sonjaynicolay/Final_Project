@@ -50,11 +50,14 @@ While our concept of determining how housing prices may be impacted by various d
 
 We had initially hoped to view the data by zipcode, but ultimately determined organizing the data by city was necessary. In addition to offering better visualizations, the crime data we hoped to include was only organized by city. Another challenge was how best to visualize the data. Once we determined we wanted to include maps, the need to include the longitude and latitude for each city became evident.
 
-As a result of these shifts, our initial plan to merge income data (income_data), demographic census data (acs_data), crime data (crime_data), and housing data (zhvi_data) suddenly included the need to add datasets that showed zipcode by city (city_data) and the longitude and latitude of each city (coord_data).
+As a result of these shifts, our initial plan to merge income data ([MedianIncome_Zip.csv](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/raw_data/MedianIncome_Zip.csv)), demographic census data ([acs_data.csv](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/raw_data/acs_data.csv)), crime data ([crime_data.csv](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/raw_data/crime_data.csv)), and housing data ([zhvi_2018.csv](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/raw_data/zhvi_2018.csv)) suddenly included the need to add datasets that showed zipcode by city ([zipcode_to_city.csv](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/raw_data/zipcode_to_city.csv)) and the longitude and latitude of each city ([city_long_lat.csv](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/raw_data/city_long_lat.csv)).
 
-As we began digging into the data we had to make decisions around what variables we wanted to keep for our final analysis. Due to the complexity of our data
+As we began analysis, we also determined that it was necessary to drop various columns that were not serving our analysis. The crime data includes vio_crime and prop_crime which are actually aggregates of other crimes listed in the dataset (e.g. murder and aggrevated assault for violent crimes, and arson and robbery for property crimes). We ultimately decided to drop the aggregated vio_crime and prop_crime data points.
 
-#### Navigating 
+As we continued to refine our finalized dataset, we also made the decision to turn all null values in the crime dataset to zero. While there is a difference between cities that had, for example, no incidents of arson in 2018 vs. cities that simply did not report incidents of arson in 2018, we determined that the difference was likely negligible and that if the frequency of a particular offense were significant in a particular city it would have been reported.
+
+#### Navigating the Joins
+Due to the complexity of the joins and merges of our 6 distinct datasets - this section is to help navigate the process. 
 
 ### Data Analysis
 ***
