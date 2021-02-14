@@ -57,7 +57,15 @@ As we began analysis, we also determined that it was necessary to drop various c
 As we continued to refine our finalized dataset, we also made the decision to turn all null values in the crime dataset to zero. While there is a difference between cities that had, for example, no incidents of arson in 2018 vs. cities that simply did not report incidents of arson in 2018, we determined that the difference was likely negligible and that if the frequency of a particular offense were significant in a particular city it would have been reported.
 
 #### Navigating the Joins
-Due to the complexity of the joins and merges of our 6 distinct datasets - this section is to help navigate the process. 
+Due to the complexity of the joins and merges of our 6 distinct datasets - this section is to help navigate the process. In the [data_merging](https://github.com/sonjaynicolay/Final_Project/tree/liviblocker/data_merging) folder, you can find 4 folder and an ERD image. To follow the process of merging I recommend viewing the files in the following order:
+1. [schemas.sql](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/data_merging/schemas.sql) shows the development of schemas in PGAdmin into which the raw data will be input.
+2. [AWS_to_PGAdmin](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/data_merging/AWS_to_PGAdmin.ipynb) shows the process of bringing the raw data files from AWS, initial cleaning, and the upload into PGAdmin.
+3. [queries.sql](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/data_merging/queries.sql) shows the initial merges of the demographic and housing data.
+4. Finally, [Development_of_FinalTable.ipynb](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/data_merging/Development_of_FinalTable.ipynb) pulls data from PGAdmin back into a Colab file, aggregates the zipcodes by city, and merges the newly aggregated table with the crime data and coordinate data.
+
+Below you can see the ERD that breaks down the merges:
+
+![ERD.png](https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/data_merging/ERD.png)
 
 ### Data Analysis
 ***
