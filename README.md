@@ -46,8 +46,12 @@ We have selected Tableau to transform our data into visualizations that support 
 
 After a few preliminary runs of our ML Model, it was observed that Median Income and Asian (race) may be two important features in determining home value across cities in Illinois. Image 1A, below shows the Top Ten Cities in Illinois according to the Zillow Home Value Index. The shades of orange represent median household income. Kenilworth has the highest median income and ZHVI in Illinois. The other 9 cities also represent some of the top median incomes. Image 1B, shows the population of Asian Americans by City by ZHVI. What we can gather from this visualization is the Asian American population in Illinois has a smaller presence in cities where the ZHVI is low. The population is higher in the darker shaded bubbles. 
 
+In the upcoming weeks The S.O.D.O. Agency will be continuing to perfect the model and refine the visualizations to bring together a cohesive presentation.
 
-In the upcoming weeks SODO will be continuing to perfect the model and refine the visualizations to bring together a cohesive presentation.
+
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/visualizations/combo_viz1.png" width="1000" />
+</p>
 
 #### Dashboard
 The final presentation dashboard will be created via user.github.io. The tableau visualizations will be embedded in iFrame to maintain their interactivity.
