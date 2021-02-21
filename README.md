@@ -111,6 +111,7 @@ After checking for multicollinearity and features importance, we decided to drop
 To avoid over fitting problem and evaluate the performance of our algorithm, we decided to standardized and split our dataset into training and testing data 
 #### Model Selection 
 ![model_selection.png](model_selection.png)
+![model_selection2.png](model_selection2.png)
 We decided to choose Random Forest Regressor because of the following reasons:
 -	It gives the highest R-square value compare to other algorithms. 
 -	It gives minimum Mean Absolute Error(MAE) and Root Mean Square Error (RMSE) compare to other algorithms we evaluated.
