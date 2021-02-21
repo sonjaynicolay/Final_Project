@@ -29,13 +29,6 @@ Our real estate agency, The S.O.D.O. Agency, is currently looking to purchase in
 - OpenDataSoft (https://public.opendatasoft.com/)
 
   Similar to kaggle.com, OpenDataSoft is a platform with a selection of wide ranging datasets. Their platform offered us datasets that showed the longitude and latitude by cities in the United States (to better help with our visualizations) as well as a dataset that broken down the cities associated with zipcode (to better merge for our final table).
-  
-  
-  
-#### Communication Protocols
-To most effectively achieve our agency goals in a timely manner. We plan to establish a project timeline that will allow us to review and triple check our work before our deadline. We also will utilize class time and schedule an additional day during the week to meet and make sure we are all on one accord. If necessary, we will attend office hours to sort out any issues we may run into that week. In between we will maintain communication and follow-up with each other via Slack messaging. 
-Each member of the agency has created an individual work branch that is attached to the main branch of our project repository. We all will review pushes from individual branches in GitHub to the main branch to ensure we present an error-proof analysis. 
-
 
 
 ### Tools Used for Analysis 
