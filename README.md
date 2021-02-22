@@ -50,7 +50,11 @@ After running the our ML Model we were able to observe that Median Income, Asian
 
 #### Dashboard
 The final presentation dashboard will be created via user.github.io. The tableau visualizations will be embedded in iFrame to maintain their interactivity.
- 
+
+[Dashboard](https://danjberes.github.io/FinalDashboard/)
+
+
+[Presentation](https://docs.google.com/presentation/d/1ujOi3hsRpnSjERmNbjmzxzWqMrg-trTRJz7vf173qLk/edit?usp=sharing)
 
 ### Data Exploration
 ***
