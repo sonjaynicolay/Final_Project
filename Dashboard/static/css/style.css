@@ -1,0 +1,25 @@
+.jumbotron {
+    background-image:  url("../images/banner.jpg");
+    text-shadow:  blur-radius color|black|initial|inherit;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    font-family: fantasy;
+    text-align: center;
+
+div {
+    text-align:center;
+    width:100%;
+}
+
+img {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+  }
+
