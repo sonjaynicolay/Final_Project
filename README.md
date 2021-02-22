@@ -77,7 +77,6 @@ Below you can see the ERD that breaks down the merges:
   <img src="https://github.com/sonjaynicolay/Final_Project/blob/liviblocker/data_merging/ERD.png" width="600" />
 </p>
 
-
 ### Data Analysis
 #### Feature Engineering.
 After checking for multicollinearity and features importance, we decided to drop features positively correlated and those that fall below the 0.025 features importance threshold.
