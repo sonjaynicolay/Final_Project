@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image:  url("../images/banner.jpg");
+    background-image:  url("../images/banner.png");
     text-shadow:  blur-radius color|black|initial|inherit;
     color: rgb(255, 255, 255);
 }
