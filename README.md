@@ -11,7 +11,7 @@
 ***
 
 #### Our Problem
-Our real estate agency, The S.O.D.O. Agency, is currently looking to purchase investment properties in multiple Illinois cities. Grateful for a stable housing market during the pandemic, we want to continue to maximize our profits and purchase homes where home values are the highest and areas that will more likely give us the best R.O.I. To help us make an informed decision, we will investigate the demographics and crime data throughout Illinois, to determine the neighborhood's effect on house prices in each city in the state of Illinois. 
+Our real estate agency, The S.O.D.O. Agency, was looking to purchase investment properties in multiple Illinois cities. Grateful for a stable housing market during the pandemic, we wanted to continue to maximize our profits and purchase homes where home values are the highest and areas that will more likely give us the best R.O.I. To help us make an informed decision, we investigated the demographics and crime data throughout Illinois, to determine the neighborhood's effect on house prices in each city in the state of Illinois. 
 
 #### Description of the Data Sources
 - Zillow (zillow.com)
