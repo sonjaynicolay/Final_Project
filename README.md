@@ -101,7 +101,7 @@ We decided to choose Random Forest Regressor because of the following reasons:
 -	Random Forest can automatically handle missing values.
 -	Random Forest is usually robust to outliers and can handle them automatically.
 #### Limitation of model selected 
-- Random Forest require much more time to train as compared to decision trees as it generates a lot of trees (instead of one tree in case of decision tree) and makes decision on the majority of votes.
+- Random Forest is a neighborhood based model, because of that it prevented us from making accurate predictions for time frames outside of our training data. 
 -It requires much computational power as well as resources as it builds numerous trees to combine their outputs. 
 - Due to the ensemble of decision trees, it also suffers interpretability and fails to determine the significance of each variable.
 #### Model Optimization
