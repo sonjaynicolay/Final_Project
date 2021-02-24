@@ -35,21 +35,21 @@ Our real estate agency, The S.O.D.O. Agency, is currently looking to purchase in
 ***
 
 #### Machine Learning
-To begin, our data will be cleaned using PySpark, data will be stored in AWS database, and a PostgresSQL server will be used to house tables for the data. To build our machine learning model we will use a supervised machine learning and utilize the scikit-learn library for the Python programming language. Scikit-learn features various algorithms that will help us predict housing prices. See requirements.txt for packages and versions.
+To begin, our data was cleaned using both Pandas and PySpark. Our data was  stored in AWS database, and a PostgresSQL server was be used to house tables for the data. To build our machine learning model we used a supervised machine learning and  the scikit-learn library for the Python programming language. Scikit-learn features various algorithms that will help us predict housing prices. Wed specifically used the Random Forest Regressor algorithm. See requirements.txt for packages and versions.
 
 #### Visualization 
-We have selected Tableau to transform our data into visualizations that support our findings. Tableau is user friendly as well as viewer friendly. It will allow us to create visual breakdowns that explain the data found over the course of our analysis. We were able to utilize different map layers to create serveral interactive maps with various data in Tableau. With more time we would like to learn how to export geojson data from our pgadmin database to create a layered map utilizing Javascript.
+We selected Tableau to transform our data into visualizations that support our findings. Tableau is user friendly as well as viewer friendly. It allowed us to manipulate and play with mulitple visuals rather quickly until we found what we felt best told the correct story, and was stronger and more visually compelling for both those who understand and do not understand data as well. Tableau also allowed us to create visual breakdowns that explain the data found over the course of our analysis. We were able to utilize different map layers to create serveral interactive maps with various data. With more time we would like to learn how to export geojson data from our pgadmin database to create a layered map utilizing Javascript.
 
-After running the our ML Model we were able to observe that Median Income, Asian (race), and Median Age are important features in determining home value across cities in Illinois. The top two being Median income and Asian (race). Image 1A, below shows the Top Ten Cities in Illinois according to the Zillow Home Value Index. The shades of orange represent median household income. Kenilworth has the highest median income and ZHVI in Illinois. The other 9 cities also represent some of the top median incomes. Image 1B, shows the population of Asian Americans by City by ZHVI. What we can gather from this visualization is the Asian American population in Illinois has a smaller presence in cities where the ZHVI is low. The population is higher in the darker shaded bubbles. 
+After running the our ML Model we observed that Median Income, (Race) Asian, and (Ethnicity) Hispanic are important features in determining home value across cities in Illinois. Below are scatter plots of the top 3 factors. Median Income showed most positive correlation. (Race) Asian showed a bit of a "burst" effect but never the less a positive correlation. (Race) Asian is only 5.5% of the total population in Illinois but of that population mimimal were located in lower ZHVI cities. (Ethnicity) Hispanic, shows a extremely weak correlation and had 2 significant outliers. Cicero with a population of 74,180 and Berwyn with 39,477. For further interest in our visual breakdowns a link is provided to Tableau and our dashboard below.
 
 [Tableau Visualizations](https://public.tableau.com/profile/sonja.williams3870)
 
 <p align="center">
-  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/visualizations/combo_viz1.png" width="1000" />
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/visualizations/scatter_factors.png" width="1000" />
 </p>
 
 #### Dashboard
-The final presentation dashboard will be created via user.github.io. The tableau visualizations will be embedded in iFrame to maintain their interactivity.
+The final presentation dashboard was created via user.github.io. The tableau visualizations were embedded in iFrame to maintain their interactivity. 
 
 [Dashboard](https://danjberes.github.io/FinalDashboard/)
 
@@ -86,14 +86,26 @@ Below you can see the ERD that breaks down the merges:
 ### Data Analysis
 #### Feature Engineering.
 After checking for multicollinearity and features importance, we decided to drop features positively correlated and those that fall below the 0.025 features importance threshold.
-![multicolinearity.png](multicolinearity.png)
-![features_importance.png](features_importance.png)
+
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/multicolinearity.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/features_importance.png" width="600" />
+</p>
 
 #### Data Preprocessing
 To avoid over fitting problem and evaluate the performance of our algorithm, we decided to standardized and split our dataset into training and testing data 
 #### Model Selection 
-![model_selection.png](model_selection.png)
-![model_selection2.png](model_selection2.png)
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/model_selection.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/model_selection2.png" width="600" />
+</p>
+
 We decided to choose Random Forest Regressor because of the following reasons:
 -	It gives the highest R-square value compare to other algorithms. 
 -	It gives minimum Mean Absolute Error(MAE) and Root Mean Square Error (RMSE) compare to other algorithms we evaluated.
@@ -109,12 +121,23 @@ We made use of RandomSearchCV to get the best params for our model: max_features
 
 #### Prediction
 The figure below are the outputs of our prediction and actual values of the houses in illinois cities.
-![predicted_values.png](predicted_values.png)
-#### Evaluation 
-The best params produced r-square of 0.84. This implies that 84% accuracy of house prices prediction.
-![best_fit.png](best_fit.png)
-![model_distribution.png](model_distribution.png)
-![qplot.png](qplot.png)
 
-The error seems not to be far from the best fit line with an exception of few outliers.
-![residual.png](residual.png)
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/predicted_values.png" width="1000" />
+</p>
+
+#### Evaluation 
+As indicated by the image below on the left, the best params produced r-square of 0.84. This implies that 84% accuracy of house prices prediction. For the image on the right, the error seems not to be far from the best fit line with an exception of few outliers
+
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/residual_bestfit.png" width="1000" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/model_distribution.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/qplot.png" width="600" />
+</p>
+
