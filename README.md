@@ -114,6 +114,7 @@ The figure below are the outputs of our prediction and actual values of the hous
 The best params produced r-square of 0.84. This implies that 84% accuracy of house prices prediction.
 ![best_fit.png](best_fit.png)
 ![model_distribution.png](model_distribution.png)
-- ![qplot.png](qplot.png)
-- The error seems not to be far from the best fit line with an exception of few outliers.
-- ![residual.png](residual.png)
+![qplot.png](qplot.png)
+
+The error seems not to be far from the best fit line with an exception of few outliers.
+![residual.png](residual.png)
