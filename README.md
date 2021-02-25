@@ -45,7 +45,7 @@ After running the our ML Model we observed that Median Income, (Race) Asian, and
 [Tableau Visualizations](https://public.tableau.com/profile/sonja.williams3870)
 
 <p align="center">
-  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/visualizations/scatter_factors.png" width="1000" />
+  <img src="https://github.com/sonjaynicolay/Final_Project/blob/sonja/resources/scatter_factors.png" width="1000" />
 </p>
 
 #### Dashboard
